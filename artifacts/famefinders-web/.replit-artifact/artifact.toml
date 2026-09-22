@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "FameFinders"
+description = "An authorized MERN-ready rebuild of the FameFinders website, matching its public services, events, branding, contact information, and responsive interactions."
+version = "1.0.0"
+id = "artifacts/famefinders-web"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24580
+
+[services.development]
+run = "pnpm --filter @workspace/famefinders-web run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/famefinders-web", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/famefinders-web/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24580"
+BASE_PATH = "/"

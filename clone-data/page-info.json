@@ -1,0 +1,933 @@
+{
+  "url": "https://famefinders.in/",
+  "title": "Home - Fame Finders",
+  "lang": "en",
+  "description": "",
+  "bodyStyles": {
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "fontFamily": "Khand",
+    "lineHeight": "28.5px",
+    "letterSpacing": "normal",
+    "color": "rgb(0, 0, 0)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "padding": "0px",
+    "margin": "0px",
+    "borderRadius": "0px",
+    "border": "0px none rgb(0, 0, 0)",
+    "boxShadow": "none",
+    "display": "block",
+    "position": "static",
+    "gap": "normal",
+    "gridTemplateColumns": "none",
+    "textAlign": "start"
+  },
+  "h1": null,
+  "h2": {
+    "fontSize": "19px",
+    "fontWeight": "500",
+    "fontFamily": "Khand, sans-serif",
+    "lineHeight": "22.8px",
+    "letterSpacing": "normal",
+    "color": "rgb(57, 79, 111)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "padding": "0px",
+    "margin": "0px 0px 15px",
+    "borderRadius": "0px",
+    "border": "0px none rgb(57, 79, 111)",
+    "boxShadow": "none",
+    "display": "block",
+    "position": "static",
+    "gap": "normal",
+    "gridTemplateColumns": "none",
+    "textAlign": "left"
+  },
+  "button": {
+    "fontSize": "15px",
+    "fontWeight": "400",
+    "fontFamily": "Khand",
+    "lineHeight": "15px",
+    "letterSpacing": "1px",
+    "color": "rgb(191, 190, 190)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "padding": "0px",
+    "margin": "0px",
+    "borderRadius": "0px",
+    "border": "0px none rgb(191, 190, 190)",
+    "boxShadow": "none",
+    "display": "block",
+    "position": "relative",
+    "gap": "normal",
+    "gridTemplateColumns": "none",
+    "textAlign": "center"
+  },
+  "cssVars": [
+    [
+      "--wp--preset--aspect-ratio--square",
+      "1"
+    ],
+    [
+      "--wp--preset--aspect-ratio--4-3",
+      "4/3"
+    ],
+    [
+      "--wp--preset--aspect-ratio--3-4",
+      "3/4"
+    ],
+    [
+      "--wp--preset--aspect-ratio--3-2",
+      "3/2"
+    ],
+    [
+      "--wp--preset--aspect-ratio--2-3",
+      "2/3"
+    ],
+    [
+      "--wp--preset--aspect-ratio--16-9",
+      "16/9"
+    ],
+    [
+      "--wp--preset--aspect-ratio--9-16",
+      "9/16"
+    ],
+    [
+      "--wp--preset--color--black",
+      "#000000"
+    ],
+    [
+      "--wp--preset--color--cyan-bluish-gray",
+      "#abb8c3"
+    ],
+    [
+      "--wp--preset--color--white",
+      "#ffffff"
+    ],
+    [
+      "--wp--preset--color--pale-pink",
+      "#f78da7"
+    ],
+    [
+      "--wp--preset--color--vivid-red",
+      "#cf2e2e"
+    ],
+    [
+      "--wp--preset--color--luminous-vivid-orange",
+      "#ff6900"
+    ],
+    [
+      "--wp--preset--color--luminous-vivid-amber",
+      "#fcb900"
+    ],
+    [
+      "--wp--preset--color--light-green-cyan",
+      "#7bdcb5"
+    ],
+    [
+      "--wp--preset--color--vivid-green-cyan",
+      "#00d084"
+    ],
+    [
+      "--wp--preset--color--pale-cyan-blue",
+      "#8ed1fc"
+    ],
+    [
+      "--wp--preset--color--vivid-cyan-blue",
+      "#0693e3"
+    ],
+    [
+      "--wp--preset--color--vivid-purple",
+      "#9b51e0"
+    ],
+    [
+      "--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple",
+      "linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan",
+      "linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange",
+      "linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--luminous-vivid-orange-to-vivid-red",
+      "linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray",
+      "linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--cool-to-warm-spectrum",
+      "linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--blush-light-purple",
+      "linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--blush-bordeaux",
+      "linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--luminous-dusk",
+      "linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--pale-ocean",
+      "linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--electric-grass",
+      "linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%)"
+    ],
+    [
+      "--wp--preset--gradient--midnight",
+      "linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%)"
+    ],
+    [
+      "--wp--preset--font-size--small",
+      "13px"
+    ],
+    [
+      "--wp--preset--font-size--medium",
+      "20px"
+    ],
+    [
+      "--wp--preset--font-size--large",
+      "36px"
+    ],
+    [
+      "--wp--preset--font-size--x-large",
+      "42px"
+    ],
+    [
+      "--wp--preset--spacing--20",
+      "0.44rem"
+    ],
+    [
+      "--wp--preset--spacing--30",
+      "0.67rem"
+    ],
+    [
+      "--wp--preset--spacing--40",
+      "1rem"
+    ],
+    [
+      "--wp--preset--spacing--50",
+      "1.5rem"
+    ],
+    [
+      "--wp--preset--spacing--60",
+      "2.25rem"
+    ],
+    [
+      "--wp--preset--spacing--70",
+      "3.38rem"
+    ],
+    [
+      "--wp--preset--spacing--80",
+      "5.06rem"
+    ],
+    [
+      "--wp--preset--shadow--natural",
+      "6px 6px 9px rgba(0, 0, 0, 0.2)"
+    ],
+    [
+      "--wp--preset--shadow--deep",
+      "12px 12px 50px rgba(0, 0, 0, 0.4)"
+    ],
+    [
+      "--wp--preset--shadow--sharp",
+      "6px 6px 0px rgba(0, 0, 0, 0.2)"
+    ],
+    [
+      "--wp--preset--shadow--outlined",
+      "6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0)"
+    ],
+    [
+      "--wp--preset--shadow--crisp",
+      "6px 6px 0px rgb(0, 0, 0)"
+    ],
+    [
+      "--woocommerce",
+      "#720eec"
+    ],
+    [
+      "--wc-green",
+      "#007518"
+    ],
+    [
+      "--wc-red",
+      "#a00"
+    ],
+    [
+      "--wc-orange",
+      "#ffba00"
+    ],
+    [
+      "--wc-blue",
+      "#2ea2cc"
+    ],
+    [
+      "--wc-primary",
+      "#720eec"
+    ],
+    [
+      "--wc-primary-text",
+      "#fcfbfe"
+    ],
+    [
+      "--wc-secondary",
+      "#e9e6ed"
+    ],
+    [
+      "--wc-secondary-text",
+      "#515151"
+    ],
+    [
+      "--wc-highlight",
+      "#958e09"
+    ],
+    [
+      "--wc-highligh-text",
+      "white"
+    ],
+    [
+      "--wc-content-bg",
+      "#fff"
+    ],
+    [
+      "--wc-subtext",
+      "#767676"
+    ],
+    [
+      "--wc-form-border-color",
+      "rgba(32, 7, 7, 0.8)"
+    ],
+    [
+      "--wc-form-border-radius",
+      "4px"
+    ],
+    [
+      "--wc-form-border-width",
+      "1px"
+    ],
+    [
+      "--wc-destructive",
+      "#cc1818"
+    ],
+    [
+      "--wc-card-border-radius",
+      "8px"
+    ],
+    [
+      "--woocommerce",
+      "#720eec"
+    ],
+    [
+      "--wc-green",
+      "#007518"
+    ],
+    [
+      "--wc-red",
+      "#a00"
+    ],
+    [
+      "--wc-orange",
+      "#ffba00"
+    ],
+    [
+      "--wc-blue",
+      "#2ea2cc"
+    ],
+    [
+      "--wc-primary",
+      "#720eec"
+    ],
+    [
+      "--wc-primary-text",
+      "#fcfbfe"
+    ],
+    [
+      "--wc-secondary",
+      "#e9e6ed"
+    ],
+    [
+      "--wc-secondary-text",
+      "#515151"
+    ],
+    [
+      "--wc-highlight",
+      "#958e09"
+    ],
+    [
+      "--wc-highligh-text",
+      "white"
+    ],
+    [
+      "--wc-content-bg",
+      "#fff"
+    ],
+    [
+      "--wc-subtext",
+      "#767676"
+    ],
+    [
+      "--wc-form-border-color",
+      "rgba(32, 7, 7, 0.8)"
+    ],
+    [
+      "--wc-form-border-radius",
+      "4px"
+    ],
+    [
+      "--wc-form-border-width",
+      "1px"
+    ],
+    [
+      "--wc-destructive",
+      "#cc1818"
+    ],
+    [
+      "--wc-card-border-radius",
+      "8px"
+    ],
+    [
+      "--woocommerce",
+      "#720eec"
+    ],
+    [
+      "--wc-green",
+      "#007518"
+    ],
+    [
+      "--wc-red",
+      "#a00"
+    ],
+    [
+      "--wc-orange",
+      "#ffba00"
+    ],
+    [
+      "--wc-blue",
+      "#2ea2cc"
+    ],
+    [
+      "--wc-primary",
+      "#720eec"
+    ],
+    [
+      "--wc-primary-text",
+      "#fcfbfe"
+    ],
+    [
+      "--wc-secondary",
+      "#e9e6ed"
+    ],
+    [
+      "--wc-secondary-text",
+      "#515151"
+    ],
+    [
+      "--wc-highlight",
+      "#958e09"
+    ],
+    [
+      "--wc-highligh-text",
+      "white"
+    ],
+    [
+      "--wc-content-bg",
+      "#fff"
+    ],
+    [
+      "--wc-subtext",
+      "#767676"
+    ],
+    [
+      "--wc-form-border-color",
+      "rgba(32, 7, 7, 0.8)"
+    ],
+    [
+      "--wc-form-border-radius",
+      "4px"
+    ],
+    [
+      "--wc-form-border-width",
+      "1px"
+    ],
+    [
+      "--wc-destructive",
+      "#cc1818"
+    ],
+    [
+      "--wc-card-border-radius",
+      "8px"
+    ],
+    [
+      "--bs-breakpoint-xs",
+      "0"
+    ],
+    [
+      "--bs-breakpoint-sm",
+      "576px"
+    ],
+    [
+      "--bs-breakpoint-md",
+      "768px"
+    ],
+    [
+      "--bs-breakpoint-lg",
+      "992px"
+    ],
+    [
+      "--bs-breakpoint-xl",
+      "1200px"
+    ],
+    [
+      "--bs-breakpoint-xxl",
+      "1400px"
+    ],
+    [
+      "--direction-multiplier",
+      "1"
+    ],
+    [
+      "--page-title-display",
+      "block"
+    ]
+  ],
+  "sections": [
+    {
+      "index": 0,
+      "tag": "div",
+      "id": "wrapper",
+      "classes": "custom-wrapper",
+      "height": 2957,
+      "headings": [
+        "OUR SERVICES",
+        "Media Planing",
+        "Brand Strategy",
+        "Public Relations",
+        "Digital Marketing",
+        "Campaign & Events",
+        "Audio/Video Production",
+        "Web Development/ Designing",
+        "Mobile App Development",
+        "Education"
+      ],
+      "buttons": [
+        "DISCOVER",
+        "Media Planing\n\nExpertise to make your brand voice stand out and reach the right audience at the right place and at the right time.",
+        "Brand Strategy\n\nFirst delve deep into your unique brand identity, goals, and vision. Based on your brand\u2019s market trends, audience behavior, and competitor analysis",
+        "Public Relations\n\nOur approach is built on deep industry knowledge, creative strategies, and a commitment to driving impactful results.",
+        "Digital Marketing\n\nCrafting strategies that amplify your brand\u2019s visibility, engage your audience effectively, and drive measurable results.",
+        "Campaign & Events\n\nOur team thrives on creativity, meticulous planning, and flawless execution to create experiences that resonate and deliver measurable impact.",
+        "Audio/Video Production\n\nThe power of compelling storytelling and the role that high-quality media production plays in capturing your audience\u2019s attention.",
+        "Web Development/ Designing\n\nWeb development services help create all types of web-based software and ensure great experience for web users.",
+        "Mobile App Development\n\nMobile app development services helps to create all types of web-based and native apps and as per requirement of\u00a0 users.",
+        "Education\n\nWe offer a comprehensive suite of education services designed to empower individuals and organizations with the knowledge, skills, and insights necessary for success in today\u2019s dynamic landscape.",
+        "Event Management"
+      ],
+      "text": "Branding\u00a0 |\u00a0 Events\u00a0 |\u00a0 Public Relations\n\nDISCOVER\nOUR SERVICES\nMedia Planing\n\nExpertise to make your brand voice stand out and reach the right audience at the right place and at the right time.\n\nBrand Strategy\n\nFirst delve deep into your unique brand identity, goals, and vision. Based on your brand\u2019s market trends, audience behavior, and competitor analysis\n\nPublic Relations\n\nOur approach is built on deep industry knowledge, creative strategies, and a commitment to driving impactful results.\n\nDigital Marketing\n\nCrafting strategies that amplify your brand\u2019s visibility, engage your audience effectively, and drive measurable results.\n\nCampaign & Events\n\nOur team thrives on creativity, meticulo",
+      "styles": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "fontFamily": "Khand",
+        "lineHeight": "28.5px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "boxShadow": "none",
+        "display": "block",
+        "position": "static",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "textAlign": "start"
+      }
+    },
+    {
+      "index": 1,
+      "tag": "footer",
+      "id": "",
+      "classes": "elementor elementor-8024 elementor-location-footer",
+      "height": 1298,
+      "headings": [
+        "WE LOVE TO HEAR FROM YOU"
+      ],
+      "buttons": [
+        "+91-9718750379",
+        "+91-8376073133",
+        "info@famefinders.in"
+      ],
+      "text": "WE LOVE TO HEAR FROM YOU\nOur Groups\n8A/8, WEA Karol Bagh New Delhi - 110005\n+91-9718750379\n+91-8376073133\ninfo@famefinders.in",
+      "styles": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "fontFamily": "Khand",
+        "lineHeight": "28.5px",
+        "letterSpacing": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 0, 0)",
+        "boxShadow": "none",
+        "display": "block",
+        "position": "static",
+        "gap": "normal",
+        "gridTemplateColumns": "none",
+        "textAlign": "start"
+      }
+    }
+  ],
+  "images": [
+    {
+      "src": "https://famefinders.in/wp-content/uploads/2024/12/logo_white-removebg-preview.png",
+      "srcset": "https://famefinders.in/wp-content/uploads/2024/12/logo_white-removebg-preview.png 1000w, https://famefinders.in/wp-content/uploads/2024/12/logo_white-removebg-preview-300x75.png 300w, https://famefinders.in/wp-content/uploads/2024/12/logo_white-removebg-preview-600x150.png 600w, https://famefinders.in/wp-content/uploads/2024/12/logo_white-removebg-preview-768x192.png 768w",
+      "alt": "",
+      "width": 1000,
+      "height": 250,
+      "class": "attachment-full size-full wp-image-7338"
+    },
+    {
+      "src": "https://famefinders.in/wp-content/uploads/2024/12/Ai-1-min-scaled.jpg",
+      "srcset": "",
+      "alt": "",
+      "width": 1440,
+      "height": 960,
+      "class": ""
+    },
+    {
+      "src": "https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview.png",
+      "srcset": "https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview.png 500w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview-300x300.png 300w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview-150x150.png 150w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview-100x100.png 100w",
+      "alt": "",
+      "width": 51,
+      "height": 51,
+      "class": "attachment-large size-large wp-image-8163"
+    },
+    {
+      "src": "https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview.png",
+      "srcset": "https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview.png 1016w, https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview-300x63.png 300w, https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview-768x161.png 768w, https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview-600x126.png 600w",
+      "alt": "",
+      "width": 173,
+      "height": 36,
+      "class": "attachment-large size-large wp-image-8171"
+    },
+    {
+      "src": "https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo.png",
+      "srcset": "https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo.png 821w, https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo-300x111.png 300w, https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo-768x284.png 768w, https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo-600x222.png 600w",
+      "alt": "",
+      "width": 157,
+      "height": 58,
+      "class": "attachment-large size-large wp-image-8411"
+    },
+    {
+      "src": "https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM.jpeg",
+      "srcset": "https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM.jpeg 851w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM-300x86.jpeg 300w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM-768x219.jpeg 768w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM-600x171.jpeg 600w",
+      "alt": "Fame Finders News",
+      "width": 173,
+      "height": 49,
+      "class": "attachment-large size-large wp-image-8375"
+    },
+    {
+      "src": "https://famefinders.in/wp-content/uploads/2024/12/KBD_News_Logo-1.png",
+      "srcset": "https://famefinders.in/wp-content/uploads/2024/12/KBD_News_Logo-1.png 581w, https://famefinders.in/wp-content/uploads/2024/12/KBD_News_Logo-1-300x47.png 300w",
+      "alt": "",
+      "width": 173,
+      "height": 27,
+      "class": "attachment-large size-large wp-image-8162"
+    },
+    {
+      "src": "https://famefinders.in/wp-content/uploads/2024/12/4-1024x234.png",
+      "srcset": "https://famefinders.in/wp-content/uploads/2024/12/4-1024x234.png 1024w, https://famefinders.in/wp-content/uploads/2024/12/4-300x69.png 300w, https://famefinders.in/wp-content/uploads/2024/12/4-768x176.png 768w, https://famefinders.in/wp-content/uploads/2024/12/4-1536x351.png 1536w, https://famefinders.in/wp-content/uploads/2024/12/4-600x137.png 600w, https://famefinders.in/wp-content/uploads/2024/12/4.png 1885w",
+      "alt": "",
+      "width": 173,
+      "height": 39,
+      "class": "attachment-large size-large wp-image-8164"
+    }
+  ],
+  "backgroundImages": [
+    {
+      "element": "H3.",
+      "background": "url(\"https://famefinders.in/wp-content/uploads/2024/02/h1-bg.png\")"
+    },
+    {
+      "element": "H3.",
+      "background": "url(\"https://famefinders.in/wp-content/uploads/2024/02/h1-bg-white.png\")"
+    },
+    {
+      "element": "H3.",
+      "background": "url(\"https://famefinders.in/wp-content/uploads/2024/02/h1-bg-white.png\")"
+    },
+    {
+      "element": "H3.",
+      "background": "url(\"https://famefinders.in/wp-content/uploads/2024/02/h1-bg-white.png\")"
+    }
+  ],
+  "links": [
+    {
+      "text": "HOME",
+      "href": "https://famefinders.in/"
+    },
+    {
+      "text": "SERVICES",
+      "href": "https://famefinders.in/our-services/"
+    },
+    {
+      "text": "ABOUT US",
+      "href": "https://famefinders.in/about-us/"
+    },
+    {
+      "text": "EVENTS",
+      "href": "https://famefinders.in/events/"
+    },
+    {
+      "text": "",
+      "href": "https://famefinders.in/future-energy-india-2/"
+    },
+    {
+      "text": "",
+      "href": "https://famefinders.in/era-of-artificial-intelligence-powered-management/"
+    },
+    {
+      "text": "",
+      "href": "https://famefinders.in/influence-with-influencers/"
+    },
+    {
+      "text": "",
+      "href": "https://famefinders.in/51-educators-book/"
+    },
+    {
+      "text": "PR DRIVE",
+      "href": "https://famefinders.in/pr-drive/"
+    },
+    {
+      "text": "CONTACT US",
+      "href": "https://famefinders.in/contact-us/"
+    },
+    {
+      "text": "MENU",
+      "href": "https://famefinders.in/#"
+    },
+    {
+      "text": "Home",
+      "href": "https://famefinders.in/"
+    },
+    {
+      "text": "Services",
+      "href": "https://famefinders.in/our-services/"
+    },
+    {
+      "text": "About Us",
+      "href": "https://famefinders.in/about-us/"
+    },
+    {
+      "text": "Events\n\u25ba",
+      "href": "https://famefinders.in/#"
+    },
+    {
+      "text": "Events",
+      "href": "https://famefinders.in/events/"
+    },
+    {
+      "text": "Future Energy India",
+      "href": "https://famefinders.in/future-energy-india-2/"
+    },
+    {
+      "text": "Era of Artificial Intelligence Powered Management",
+      "href": "https://famefinders.in/era-of-artificial-intelligence-powered-management/"
+    },
+    {
+      "text": "Influence with Influencers",
+      "href": "https://famefinders.in/influence-with-influencers/"
+    },
+    {
+      "text": "Educators Book Launch",
+      "href": "https://famefinders.in/51-educators-book/"
+    },
+    {
+      "text": "PR Drive",
+      "href": "https://famefinders.in/pr-drive/"
+    },
+    {
+      "text": "Contact Us",
+      "href": "https://famefinders.in/contact-us/"
+    },
+    {
+      "text": "DISCOVER",
+      "href": "https://famefinders.in/#countdown"
+    },
+    {
+      "text": "Media Planing\n\nExpertise to make your brand voice stand out and reach the right audience at the right place and at the right time.",
+      "href": "https://famefinders.in/meida-planning/"
+    },
+    {
+      "text": "Brand Strategy\n\nFirst delve deep into your unique brand identity, goals, and vision. Based on your brand\u2019s market trends, audience behavior, and competitor analysis",
+      "href": "https://famefinders.in/brand-strategy/"
+    },
+    {
+      "text": "Public Relations\n\nOur approach is built on deep industry knowledge, creative strategies, and a commitment to driving impactful results.",
+      "href": "https://famefinders.in/public-relations/"
+    },
+    {
+      "text": "Digital Marketing\n\nCrafting strategies that amplify your brand\u2019s visibility, engage your audience effectively, and drive measurable results.",
+      "href": "https://famefinders.in/digital-marketing/"
+    },
+    {
+      "text": "Campaign & Events\n\nOur team thrives on creativity, meticulous planning, and flawless execution to create experiences that resonate and deliver measurable impact.",
+      "href": "https://famefinders.in/campaign-and-event/"
+    },
+    {
+      "text": "Audio/Video Production\n\nThe power of compelling storytelling and the role that high-quality media production plays in capturing your audience\u2019s attention.",
+      "href": "https://famefinders.in/campaign-and-event/"
+    },
+    {
+      "text": "Web Development/ Designing\n\nWeb development services help create all types of web-based software and ensure great experience for web users.",
+      "href": "https://famefinders.in/audio-video-production/"
+    },
+    {
+      "text": "Mobile App Development\n\nMobile app development services helps to create all types of web-based and native apps and as per requirement of\u00a0 users.",
+      "href": "https://famefinders.in/audio-video-production/"
+    },
+    {
+      "text": "Education\n\nWe offer a comprehensive suite of education services designed to empower individuals and organizations with the knowledge, skills, and insights necessary for success in today\u2019s dynamic landscape.",
+      "href": "https://famefinders.in/education/"
+    },
+    {
+      "text": "",
+      "href": "https://famefinders.in/education/"
+    },
+    {
+      "text": "Event Management",
+      "href": "https://famefinders.in/events/"
+    },
+    {
+      "text": "",
+      "href": "https://mydaiz.in/"
+    },
+    {
+      "text": "",
+      "href": "https://studydaiz.com/"
+    },
+    {
+      "text": "",
+      "href": "https://influencais.com/"
+    },
+    {
+      "text": "",
+      "href": "https://famefindersnews.in/"
+    },
+    {
+      "text": "",
+      "href": "https://kbdnews.in/"
+    },
+    {
+      "text": "",
+      "href": "https://magazine.famefinders.in/"
+    },
+    {
+      "text": "+91-9718750379",
+      "href": "tel:%20+91%209718750379"
+    },
+    {
+      "text": "+91-8376073133",
+      "href": "tel:%20+91%209718750379"
+    },
+    {
+      "text": "info@famefinders.in",
+      "href": "mailto:%20info@famefinders.in"
+    }
+  ],
+  "svgs": [
+    {
+      "i": 0,
+      "viewBox": "0 0 512 512",
+      "html": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-dot-circle\" viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm80 248c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80z\"></path></svg>",
+      "parentText": ""
+    },
+    {
+      "i": 1,
+      "viewBox": "0 0 512 512",
+      "html": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-dot-circle\" viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm80 248c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80z\"></path></svg>",
+      "parentText": ""
+    },
+    {
+      "i": 2,
+      "viewBox": "0 0 512 512",
+      "html": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-dot-circle\" viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm80 248c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80z\"></path></svg>",
+      "parentText": ""
+    },
+    {
+      "i": 3,
+      "viewBox": "0 0 512 512",
+      "html": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-dot-circle\" viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm80 248c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80z\"></path></svg>",
+      "parentText": ""
+    },
+    {
+      "i": 4,
+      "viewBox": "0 0 512 512",
+      "html": "<svg aria-hidden=\"true\" class=\"e-font-icon-svg e-fas-dot-circle\" viewBox=\"0 0 512 512\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm80 248c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80z\"></path></svg>",
+      "parentText": ""
+    },
+    {
+      "i": 5,
+      "viewBox": "",
+      "html": "<svg style=\"display: none;\" class=\"e-font-icon-svg-symbols\"></svg>",
+      "parentText": "HOME\nSERVICES\nABOUT US\nEVENTS\nPR DRIVE\nCONTACT US\n\nBranding\u00a0 |\u00a0 Events\u00a0 |\u00a0 Public Relations\n\nDISCOVE"
+    }
+  ],
+  "header": {
+    "text": "HOME\nSERVICES\nABOUT US\nEVENTS\nPR DRIVE\nCONTACT US",
+    "html": "<header class=\"custom-header\">\n\n\t\t\t<div class=\"container\">\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<div class=\"col-md-12\">\n\n\t\t\t\t\t\t<div class=\"header-container\">\n\n\n\t\t\t\t\t\t<div class=\"header-inner-box\">\n\n\t\t\t\t\t\t\t\t<!-- NAVIGATION -->\n\t\t\t\t\t\t\t\t<nav>\n\n\t\t\t\t\t\t\t\t<div id=\"rabbit_menu\" class=\"menu-main-menu-container\"><ul id=\"menu-main-menu\" class=\"menu\"><li id=\"menu-item-7619\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1288 current_page_item active\"><a href=\"https://famefinders.in/\"><span>Home</span></a></li>\n<li id=\"menu-item-7620\" class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/our-services/\"><span>Services</span></a></li>\n<li id=\"menu-item-7830\" class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/about-us/\"><span>About Us</span></a></li>\n<li id=\"menu-item-8055\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-sub\"><a href=\"https://famefinders.in/events/\"><span>Events</span></a>\n<ul>\n\t<li id=\"menu-item-9534\" class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/future-energy-india-2/\"><span>Future Energy India</span></a></li>\n\t<li id=\"menu-item-8064\" class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/era-of-artificial-intelligence-powered-management/\"><span>Era of Artificial Intelligence Powered Management</span></a></li>\n\t<li id=\"menu-item-8160\" class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/influence-with-influencers/\"><span>Influence with Influencers</span></a></li>\n\t<li id=\"menu-item-9684\" class=\"menu-item menu-item-type-custom menu-item-object-custom\"><a href=\"https://famefinders.in/51-educators-book/\"><span>Educators Book Launch</span></a></li>\n</ul>\n</li>\n<li id=\"menu-item-9017\" class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/pr-drive/\"><span>PR Drive</span></a></li>\n<li id=\"menu-item-7980\" class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/contact-us/\"><span>Contact Us</span></a></li>\n</ul></div>\n\t\t\t\t\t\t\t\t</nav>\n\t\t\t\t\t\t\t\t<!-- END NAVIGATION -->\n\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t<!-- MOBILE MENU -->\n\t\t\t\t\t\t\t\t<div class=\"mobile-menu\"><div class=\"slicknav_menu\"><a href=\"#\" aria-haspopup=\"true\" role=\"button\" tabindex=\"0\" class=\"slicknav_btn slicknav_collapsed\"><span class=\"slicknav_menutxt\">MENU</span><span class=\"slicknav_icon\"><span class=\"slicknav_icon-bar\"></span><span class=\"slicknav_icon-bar\"></span><span class=\"slicknav_icon-bar\"></span></span></a><div class=\"slicknav_nav slicknav_hidden\" aria-hidden=\"true\" role=\"menu\" style=\"display: none;\"><ul class=\"menu\"><li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1288 current_page_item active\"><a href=\"https://famefinders.in/\" role=\"menuitem\"><span>Home</span></a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/our-services/\" role=\"menuitem\"><span>Services</span></a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/about-us/\" role=\"menuitem\"><span>About Us</span></a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children has-sub slicknav_collapsed slicknav_parent\"><a href=\"#\" role=\"menuitem\" aria-haspopup=\"true\" tabindex=\"-1\" class=\"slicknav_item slicknav_row\"><a href=\"https://famefinders.in/events/\"><span>Events</span></a>\n<span class=\"slicknav_arrow\">\u25ba</span></a><ul role=\"menu\" class=\"slicknav_hidden\" aria-hidden=\"true\" style=\"display: none;\">\n\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/future-energy-india-2/\" role=\"menuitem\" tabindex=\"-1\"><span>Future Energy India</span></a></li>\n\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/era-of-artificial-intelligence-powered-management/\" role=\"menuitem\" tabindex=\"-1\"><span>Era of Artificial Intelligence Powered Management</span></a></li>\n\t<li class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/influence-with-influencers/\" role=\"menuitem\" tabindex=\"-1\"><span>Influence with Influencers</span></a></li>\n\t<li class=\"menu-item menu-item-type-custom menu-item-object-custom\"><a href=\"https://famefinders.in/51-educators-book/\" role=\"menuitem\" tabindex=\"-1\"><span>Educators Book Launch</span></a></li>\n</ul>\n</li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/pr-drive/\" role=\"menuitem\"><span>PR Drive</span></a></li>\n<li class=\"menu-item menu-item-type-post_type menu-item-object-page\"><a href=\"https://famefinders.in/contact-us/\" role=\"menuitem\"><span>Contact Us</span></a></li>\n</ul></div></div></div>\n\t\t\t\t\t\t\t<!-- END MOBILE MENU -->\n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\n\t\t</header>",
+    "styles": {
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "fontFamily": "Khand",
+      "lineHeight": "28.5px",
+      "letterSpacing": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "display": "block",
+      "position": "relative",
+      "gap": "normal",
+      "gridTemplateColumns": "none",
+      "textAlign": "start"
+    }
+  },
+  "footer": {
+    "text": "WE LOVE TO HEAR FROM YOU\nOur Groups\n8A/8, WEA Karol Bagh New Delhi - 110005\n+91-9718750379\n+91-8376073133\ninfo@famefinders.in",
+    "html": "<footer data-elementor-type=\"footer\" data-elementor-id=\"8024\" class=\"elementor elementor-8024 elementor-location-footer\" data-elementor-post-type=\"elementor_library\">\n\t\t\t<div class=\"elementor-element elementor-element-8ed85ef e-flex e-con-boxed e-con e-parent e-lazyloaded\" data-id=\"8ed85ef\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t<div class=\"elementor-element elementor-element-48a51a7 e-con-full e-flex e-con e-child\" data-id=\"48a51a7\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div data-aos=\"custom-fade-up\" data-aos-delay=\"100\" data-aos-once=\"true\" class=\"elementor-element elementor-element-0f70d39 elementor-widget__width-inherit elementor-widget elementor-widget-rabbit-title aos-init aos-animate\" data-id=\"0f70d39\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;custom-fade-up&quot;}\" data-widget_type=\"rabbit-title.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<div class=\"title-section\" data-animation=\"false\"><h3>WE LOVE TO HEAR FROM YOU</h3></div>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-b08d69e e-con-full e-flex e-con e-child\" data-id=\"b08d69e\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div data-aos=\"custom-fade-up\" data-aos-delay=\"200\" data-aos-once=\"true\" class=\"elementor-element elementor-element-d43194d elementor-widget__width-inherit elementor-widget elementor-widget-rabbit-contact-form aos-init aos-animate\" data-id=\"d43194d\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;custom-fade-up&quot;}\" data-widget_type=\"rabbit-contact-form.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\n<div class=\"wpcf7 js\" id=\"wpcf7-f3026-o1\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"3026\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></p> <ul></ul></div>\n<form action=\"/#wpcf7-f3026-o1\" method=\"post\" class=\"wpcf7-form init\" aria-label=\"Contact form\" novalidate=\"novalidate\" data-status=\"init\">\n<fieldset class=\"hidden-fields-container\"><input type=\"hidden\" name=\"_wpcf7\" value=\"3026\" style=\"\"><input type=\"hidden\" name=\"_wpcf7_version\" value=\"6.1.7\" style=\"\"><input type=\"hidden\" name=\"_wpcf7_locale\" value=\"en_US\" style=\"\"><input type=\"hidden\" name=\"_wpcf7_unit_tag\" value=\"wpcf7-f3026-o1\" style=\"\"><input type=\"hidden\" name=\"_wpcf7_container_post\" value=\"0\" style=\"\"><input type=\"hidden\" name=\"_wpcf7_posted_data_hash\" value=\"\" style=\"\">\n</fieldset>\n<div class=\"contact-form\">\n\n    <input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required\" aria-required=\"true\" aria-invalid=\"false\" placeholder=\"Name\" value=\"\" type=\"text\" name=\"your-name\" style=\"\"> \n\n    <input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email\" aria-required=\"true\" aria-invalid=\"false\" placeholder=\"Email\" value=\"\" type=\"email\" name=\"your-email\" style=\"\"> \n\n <textarea cols=\"40\" rows=\"10\" maxlength=\"2000\" class=\"wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required\" aria-required=\"true\" aria-invalid=\"false\" placeholder=\"Message\" name=\"your-message\" style=\"\"></textarea>\n\n <input class=\"wpcf7-form-control wpcf7-submit has-spinner\" type=\"submit\" value=\"Send message\" style=\"\"><span class=\"wpcf7-spinner\"></span>\n\n\n\n</div><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n</form>\n</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-e49dbb6 e-con-full e-flex e-con e-parent e-lazyloaded\" data-id=\"e49dbb6\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-b687d1a elementor-widget elementor-widget-google_maps\" data-id=\"b687d1a\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"google_maps.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-custom-embed\">\n\t\t\t<iframe loading=\"lazy\" src=\"https://maps.google.com/maps?q=8A%2F8%2C%20W.E.A%2C%20Karol%20Bagh%20Behind%20MTNL%20Telephone%20Exchange%20on%20Pusa%20Road%2C%20Ganga%20Mandir%20Marg%2C%20WEA%2C%20Karol%20Bagh%2C%20New%20Delhi%2C%20Delhi%20110005&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near\" title=\"8A/8, W.E.A, Karol Bagh Behind MTNL Telephone Exchange on Pusa Road, Ganga Mandir Marg, WEA, Karol Bagh, New Delhi, Delhi 110005\" aria-label=\"8A/8, W.E.A, Karol Bagh Behind MTNL Telephone Exchange on Pusa Road, Ganga Mandir Marg, WEA, Karol Bagh, New Delhi, Delhi 110005\"></iframe>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-39ed0ee e-flex e-con-boxed e-con e-parent e-lazyloaded\" data-id=\"39ed0ee\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-9bad343 elementor-widget-divider--view-line_text elementor-widget__width-inherit elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider\" data-id=\"9bad343\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"divider.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<div class=\"elementor-divider\">\n\t\t\t<span class=\"elementor-divider-separator\">\n\t\t\t\t\t\t\t<span class=\"elementor-divider__text elementor-divider__element\">\n\t\t\t\tOur Groups\t\t\t\t</span>\n\t\t\t\t\t\t</span>\n\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-e3317ed e-grid e-con-full e-con e-parent e-lazyloaded\" data-id=\"e3317ed\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t<div class=\"elementor-element elementor-element-fb230d0 e-flex e-con-boxed e-con e-child\" data-id=\"fb230d0\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-4f642dc elementor-widget elementor-widget-image\" data-id=\"4f642dc\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://mydaiz.in/\">\n\t\t\t\t\t\t\t<img width=\"500\" height=\"500\" src=\"https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview.png\" class=\"attachment-large size-large wp-image-8163\" alt=\"\" srcset=\"https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview.png 500w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview-300x300.png 300w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview-150x150.png 150w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp_Image_2024-04-11_at_18.14.17_3428ee40-removebg-preview-100x100.png 100w\" sizes=\"(max-width: 500px) 100vw, 500px\">\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-734f4b2 e-flex e-con-boxed e-con e-child\" data-id=\"734f4b2\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-3086fb0 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image\" data-id=\"3086fb0\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://studydaiz.com/\">\n\t\t\t\t\t\t\t<img width=\"1016\" height=\"213\" src=\"https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview.png\" class=\"attachment-large size-large wp-image-8171\" alt=\"\" srcset=\"https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview.png 1016w, https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview-300x63.png 300w, https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview-768x161.png 768w, https://famefinders.in/wp-content/uploads/2024/12/logo_studydaiz-removebg-preview-600x126.png 600w\" sizes=\"(max-width: 1016px) 100vw, 1016px\">\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-d104ad1 e-flex e-con-boxed e-con e-child\" data-id=\"d104ad1\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-531b71d elementor-widget-mobile__width-initial elementor-widget elementor-widget-image\" data-id=\"531b71d\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://influencais.com/\">\n\t\t\t\t\t\t\t<img width=\"821\" height=\"304\" src=\"https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo.png\" class=\"attachment-large size-large wp-image-8411\" alt=\"\" srcset=\"https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo.png 821w, https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo-300x111.png 300w, https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo-768x284.png 768w, https://famefinders.in/wp-content/uploads/2024/12/influencais_Logo-600x222.png 600w\" sizes=\"(max-width: 821px) 100vw, 821px\">\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-4d85172 e-flex e-con-boxed e-con e-child\" data-id=\"4d85172\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-f3beb03 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image\" data-id=\"f3beb03\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://famefindersnews.in/\">\n\t\t\t\t\t\t\t<img width=\"851\" height=\"243\" src=\"https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM.jpeg\" class=\"attachment-large size-large wp-image-8375\" alt=\"Fame Finders News\" srcset=\"https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM.jpeg 851w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM-300x86.jpeg 300w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM-768x219.jpeg 768w, https://famefinders.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-19-at-1.54.35-PM-600x171.jpeg 600w\" sizes=\"(max-width: 851px) 100vw, 851px\">\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-91c8ae3 e-flex e-con-boxed e-con e-child\" data-id=\"91c8ae3\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-a0f3a86 elementor-widget elementor-widget-image\" data-id=\"a0f3a86\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://kbdnews.in/\">\n\t\t\t\t\t\t\t<img width=\"581\" height=\"91\" src=\"https://famefinders.in/wp-content/uploads/2024/12/KBD_News_Logo-1.png\" class=\"attachment-large size-large wp-image-8162\" alt=\"\" srcset=\"https://famefinders.in/wp-content/uploads/2024/12/KBD_News_Logo-1.png 581w, https://famefinders.in/wp-content/uploads/2024/12/KBD_News_Logo-1-300x47.png 300w\" sizes=\"(max-width: 581px) 100vw, 581px\">\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-bc407be e-flex e-con-boxed e-con e-child\" data-id=\"bc407be\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t\t\t<div class=\"elementor-element elementor-element-757ea51 elementor-widget elementor-widget-image\" data-id=\"757ea51\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"image.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://magazine.famefinders.in/\">\n\t\t\t\t\t\t\t<img width=\"1024\" height=\"234\" src=\"https://famefinders.in/wp-content/uploads/2024/12/4-1024x234.png\" class=\"attachment-large size-large wp-image-8164\" alt=\"\" srcset=\"https://famefinders.in/wp-content/uploads/2024/12/4-1024x234.png 1024w, https://famefinders.in/wp-content/uploads/2024/12/4-300x69.png 300w, https://famefinders.in/wp-content/uploads/2024/12/4-768x176.png 768w, https://famefinders.in/wp-content/uploads/2024/12/4-1536x351.png 1536w, https://famefinders.in/wp-content/uploads/2024/12/4-600x137.png 600w, https://famefinders.in/wp-content/uploads/2024/12/4.png 1885w\" sizes=\"(max-width: 1024px) 100vw, 1024px\">\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-cf5b5fc e-grid e-con-boxed e-con e-parent e-lazyloaded\" data-id=\"cf5b5fc\" data-element_type=\"container\" data-e-type=\"container\" data-settings=\"{&quot;background_background&quot;:&quot;classic&quot;}\">\n\t\t\t\t\t<div class=\"e-con-inner\">\n\t\t<div class=\"elementor-element elementor-element-93d14d8 e-con-full e-flex e-con e-child\" data-id=\"93d14d8\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-937f3f9 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"937f3f9\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"icon-list.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"duotone fa-duotone fa-map-location-dot\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">8A/8, WEA Karol Bagh New Delhi - 110005</span>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-92e16b2 e-con-full e-flex e-con e-child\" data-id=\"92e16b2\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-fac0f7f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"fac0f7f\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"icon-list.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"tel:%20+91%209718750379\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"duotone fa-duotone fa-phone\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">+91-9718750379</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-9558b3f e-con-full e-flex e-con e-child\" data-id=\"9558b3f\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-64901c5 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"64901c5\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"icon-list.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"tel:%20+91%209718750379\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"duotone fa-duotone fa-phone\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">+91-8376073133</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t<div class=\"elementor-element elementor-element-1d9a02f e-con-full e-flex e-con e-child\" data-id=\"1d9a02f\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-56c5e47 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list\" data-id=\"56c5e47\" data-element_type=\"widget\" data-e-type=\"widget\" data-settings=\"{&quot;aos_animation_name&quot;:&quot;none&quot;}\" data-widget_type=\"icon-list.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t\t\t<ul class=\"elementor-icon-list-items\">\n\t\t\t\t\t\t\t<li class=\"elementor-icon-list-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"mailto:%20info@famefinders.in\">\n\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-icon\">\n\t\t\t\t\t\t\t<i aria-hidden=\"true\" class=\"light fa-light fa-paper-plane\"></i>\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t<span class=\"elementor-icon-list-text\">info@famefinders.in</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</footer>",
+    "styles": {
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "fontFamily": "Khand",
+      "lineHeight": "28.5px",
+      "letterSpacing": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "display": "block",
+      "position": "static",
+      "gap": "normal",
+      "gridTemplateColumns": "none",
+      "textAlign": "start"
+    }
+  }
+}

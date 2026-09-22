@@ -1,0 +1,89 @@
+[
+  {
+    "index": 0,
+    "tag": "div",
+    "id": "wrapper",
+    "classes": "custom-wrapper",
+    "height": 2957,
+    "headings": [
+      "OUR SERVICES",
+      "Media Planing",
+      "Brand Strategy",
+      "Public Relations",
+      "Digital Marketing",
+      "Campaign & Events",
+      "Audio/Video Production",
+      "Web Development/ Designing",
+      "Mobile App Development",
+      "Education"
+    ],
+    "buttons": [
+      "DISCOVER",
+      "Media Planing\n\nExpertise to make your brand voice stand out and reach the right audience at the right place and at the right time.",
+      "Brand Strategy\n\nFirst delve deep into your unique brand identity, goals, and vision. Based on your brand\u2019s market trends, audience behavior, and competitor analysis",
+      "Public Relations\n\nOur approach is built on deep industry knowledge, creative strategies, and a commitment to driving impactful results.",
+      "Digital Marketing\n\nCrafting strategies that amplify your brand\u2019s visibility, engage your audience effectively, and drive measurable results.",
+      "Campaign & Events\n\nOur team thrives on creativity, meticulous planning, and flawless execution to create experiences that resonate and deliver measurable impact.",
+      "Audio/Video Production\n\nThe power of compelling storytelling and the role that high-quality media production plays in capturing your audience\u2019s attention.",
+      "Web Development/ Designing\n\nWeb development services help create all types of web-based software and ensure great experience for web users.",
+      "Mobile App Development\n\nMobile app development services helps to create all types of web-based and native apps and as per requirement of\u00a0 users.",
+      "Education\n\nWe offer a comprehensive suite of education services designed to empower individuals and organizations with the knowledge, skills, and insights necessary for success in today\u2019s dynamic landscape.",
+      "Event Management"
+    ],
+    "text": "Branding\u00a0 |\u00a0 Events\u00a0 |\u00a0 Public Relations\n\nDISCOVER\nOUR SERVICES\nMedia Planing\n\nExpertise to make your brand voice stand out and reach the right audience at the right place and at the right time.\n\nBrand Strategy\n\nFirst delve deep into your unique brand identity, goals, and vision. Based on your brand\u2019s market trends, audience behavior, and competitor analysis\n\nPublic Relations\n\nOur approach is built on deep industry knowledge, creative strategies, and a commitment to driving impactful results.\n\nDigital Marketing\n\nCrafting strategies that amplify your brand\u2019s visibility, engage your audience effectively, and drive measurable results.\n\nCampaign & Events\n\nOur team thrives on creativity, meticulo",
+    "styles": {
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "fontFamily": "Khand",
+      "lineHeight": "28.5px",
+      "letterSpacing": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "display": "block",
+      "position": "static",
+      "gap": "normal",
+      "gridTemplateColumns": "none",
+      "textAlign": "start"
+    }
+  },
+  {
+    "index": 1,
+    "tag": "footer",
+    "id": "",
+    "classes": "elementor elementor-8024 elementor-location-footer",
+    "height": 1298,
+    "headings": [
+      "WE LOVE TO HEAR FROM YOU"
+    ],
+    "buttons": [
+      "+91-9718750379",
+      "+91-8376073133",
+      "info@famefinders.in"
+    ],
+    "text": "WE LOVE TO HEAR FROM YOU\nOur Groups\n8A/8, WEA Karol Bagh New Delhi - 110005\n+91-9718750379\n+91-8376073133\ninfo@famefinders.in",
+    "styles": {
+      "fontSize": "15px",
+      "fontWeight": "400",
+      "fontFamily": "Khand",
+      "lineHeight": "28.5px",
+      "letterSpacing": "normal",
+      "color": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "border": "0px none rgb(0, 0, 0)",
+      "boxShadow": "none",
+      "display": "block",
+      "position": "static",
+      "gap": "normal",
+      "gridTemplateColumns": "none",
+      "textAlign": "start"
+    }
+  }
+]
