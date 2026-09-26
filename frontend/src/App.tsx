@@ -45,7 +45,7 @@ export default function App() {
           <div style={{ display: "flex", alignItems: "center" }}>
             <Link href="/">
               <img
-                src="/images/famefinders-logo.jpg"
+                src="/images/logo.jpg"
                 alt="Fame Finders"
                 style={{ height: "36px", objectFit: "contain", cursor: "pointer" }}
                 onError={(e) => {
