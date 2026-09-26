@@ -11,13 +11,12 @@ export default function Header() {
     setEventsOpen(false);
   };
 
-  // Helper function to check if a link is active
   const isActive = (path: string) => location === path;
 
   const linkStyle = (path: string) => ({
     color: isActive(path) ? "#c8102e" : "#f3f4f6",
     textDecoration: "none",
-    fontSize: "12px",
+    fontSize: "14px", // Font size bada kiya
     fontWeight: "700",
     letterSpacing: "1.5px",
     textTransform: "uppercase" as const,
@@ -41,21 +40,21 @@ export default function Header() {
     >
       <div
         style={{
-          maxWidth: "1200px",
+          maxWidth: "1300px",
           margin: "0 auto",
-          padding: "16px 24px",
+          padding: "26px 32px", // Header ki height/padding badi kar di
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
         }}
       >
-        {/* Logo Section */}
+        {/* Logo Section - Bada kiya */}
         <div style={{ display: "flex", alignItems: "center" }}>
           <Link href="/">
             <img
               src="/images/logo.jpg"
               alt="Fame Finders"
-              style={{ height: "36px", objectFit: "contain", cursor: "pointer" }}
+              style={{ height: "48px", objectFit: "contain", cursor: "pointer" }}
             />
           </Link>
         </div>
@@ -65,7 +64,7 @@ export default function Header() {
           style={{
             display: "none",
             alignItems: "center",
-            gap: "28px",
+            gap: "36px", // Links ke beech ka gap badhaya
           }}
           className="desktop-nav-menu"
         >
@@ -90,7 +89,7 @@ export default function Header() {
               style={{
                 color: location === "/events" ? "#c8102e" : "#f3f4f6",
                 textDecoration: "none",
-                fontSize: "12px",
+                fontSize: "14px",
                 fontWeight: "700",
                 letterSpacing: "1.5px",
                 textTransform: "uppercase",
@@ -101,7 +100,7 @@ export default function Header() {
                 paddingBottom: "4px",
               }}
             >
-              EVENTS <span style={{ fontSize: "9px" }}>▼</span>
+              EVENTS <span style={{ fontSize: "10px" }}>▼</span>
             </Link>
 
             {eventsOpen && (
@@ -113,8 +112,8 @@ export default function Header() {
                   backgroundColor: "#1c222b",
                   boxShadow: "0 10px 25px rgba(0,0,0,0.5)",
                   borderRadius: "4px",
-                  minWidth: "260px",
-                  padding: "8px 0",
+                  minWidth: "280px",
+                  padding: "10px 0",
                   display: "flex",
                   flexDirection: "column",
                   border: "1px solid rgba(255,255,255,0.1)",
@@ -131,10 +130,10 @@ export default function Header() {
                     href="/events"
                     onClick={() => setEventsOpen(false)}
                     style={{
-                      padding: "10px 18px",
+                      padding: "12px 20px",
                       color: "#d1d5db",
                       textDecoration: "none",
-                      fontSize: "13px",
+                      fontSize: "14px",
                       lineHeight: "1.4",
                     }}
                   >
@@ -161,9 +160,9 @@ export default function Header() {
             background: "none",
             border: "1px solid rgba(255,255,255,0.3)",
             color: "#fff",
-            padding: "6px 12px",
+            padding: "8px 16px",
             borderRadius: "4px",
-            fontSize: "12px",
+            fontSize: "14px",
             letterSpacing: "1px",
             cursor: "pointer",
           }}
@@ -178,29 +177,29 @@ export default function Header() {
         <div
           style={{
             backgroundColor: "#161b22",
-            padding: "16px 24px",
+            padding: "20px 24px",
             display: "flex",
             flexDirection: "column",
-            gap: "14px",
+            gap: "16px",
             borderTop: "1px solid rgba(255,255,255,0.1)",
           }}
         >
-          <Link href="/" onClick={closeMobile} style={{ color: location === "/" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "14px", fontWeight: location === "/" ? "700" : "400" }}>
+          <Link href="/" onClick={closeMobile} style={{ color: location === "/" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/" ? "700" : "400" }}>
             Home
           </Link>
-          <Link href="/services" onClick={closeMobile} style={{ color: location === "/services" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "14px", fontWeight: location === "/services" ? "700" : "400" }}>
+          <Link href="/services" onClick={closeMobile} style={{ color: location === "/services" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/services" ? "700" : "400" }}>
             Services
           </Link>
-          <Link href="/about" onClick={closeMobile} style={{ color: location === "/about" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "14px", fontWeight: location === "/about" ? "700" : "400" }}>
+          <Link href="/about" onClick={closeMobile} style={{ color: location === "/about" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/about" ? "700" : "400" }}>
             About Us
           </Link>
-          <Link href="/events" onClick={closeMobile} style={{ color: location === "/events" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "14px", fontWeight: location === "/events" ? "700" : "400" }}>
+          <Link href="/events" onClick={closeMobile} style={{ color: location === "/events" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/events" ? "700" : "400" }}>
             Events
           </Link>
-          <Link href="/pr-drive" onClick={closeMobile} style={{ color: location === "/pr-drive" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "14px", fontWeight: location === "/pr-drive" ? "700" : "400" }}>
+          <Link href="/pr-drive" onClick={closeMobile} style={{ color: location === "/pr-drive" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/pr-drive" ? "700" : "400" }}>
             PR Drive
           </Link>
-          <Link href="/contact" onClick={closeMobile} style={{ color: location === "/contact" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "14px", fontWeight: location === "/contact" ? "700" : "400" }}>
+          <Link href="/contact" onClick={closeMobile} style={{ color: location === "/contact" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/contact" ? "700" : "400" }}>
             Contact Us
           </Link>
         </div>
