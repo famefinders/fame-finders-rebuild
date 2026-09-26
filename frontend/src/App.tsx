@@ -6,6 +6,7 @@ import PrDrivePage from "./pages/PrDrivePage";
 import ContactPage from "./pages/ContactPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import EventsPage from "./pages/EventsPage";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/about" component={AboutPage} />
           <Route path="/pr-drive" component={PrDrivePage} />
           <Route path="/contact" component={ContactPage} />
+          <Route path="/events" component={EventsPage} />
           <Route>
             <div style={{ padding: "160px 20px", textAlign: "center" }}>
               <h2>404 - Page Not Found</h2>
