@@ -41,7 +41,7 @@ const testimonials = [
     role: "CEO, Yushu Excellence Technologies",
     feedback:
       "Fame Finders has done an exceptional job of building users' awareness of our Yushu brand. Team Fame Finders is also on the pulse of the goings-on in the market which helps inform our media strategy.",
-    img: "/images/amitdua.jpg",
+    img: "/images/dramit.jpg",
   },
   {
     name: "Anil Joshi",
