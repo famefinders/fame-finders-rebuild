@@ -190,7 +190,7 @@ export default function PrDrivePage() {
         </div>
       </section>
 
-      {/* 4. PR Drive Campaigns Grid with Real Images */}
+      {/* 4. PR Drive Campaigns Grid with Properly Fitted Images */}
       <section style={{ maxWidth: "1140px", margin: "0 auto", padding: "40px 20px 100px" }}>
         <div
           style={{
@@ -216,13 +216,14 @@ export default function PrDrivePage() {
               <div
                 style={{
                   width: "100%",
-                  height: "180px",
-                  backgroundColor: "#f9fafb",
+                  height: "240px",
+                  backgroundColor: "#ffffff",
                   borderBottom: "1px solid #e5e7eb",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   overflow: "hidden",
+                  padding: "12px",
                 }}
               >
                 <img
