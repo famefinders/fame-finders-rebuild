@@ -93,34 +93,36 @@ export default function Header() {
             ABOUT US
           </Link>
 
-          {/* Events Dropdown */}
-          <div style={{ position: "relative" }}>
-            <button
-              type="button"
-              onClick={() => setEventsOpen((prev) => !prev)}
+          {/* Events Hover Dropdown */}
+          <div 
+            style={{ position: "relative", padding: "10px 0" }}
+            onMouseEnter={() => setEventsOpen(true)}
+            onMouseLeave={() => setEventsOpen(false)}
+          >
+            {/* Click karne par /events par jayega */}
+            <Link
+              href="/events"
               style={{
-                background: "none",
-                border: "none",
                 color: "#f3f4f6",
+                textDecoration: "none",
                 fontSize: "12px",
                 fontWeight: "700",
                 letterSpacing: "1.5px",
                 textTransform: "uppercase",
-                cursor: "pointer",
                 display: "flex",
                 alignItems: "center",
                 gap: "5px",
-                padding: 0,
               }}
             >
               EVENTS <span style={{ fontSize: "9px" }}>▼</span>
-            </button>
+            </Link>
 
+            {/* Hover karne par ye menu dikhega */}
             {eventsOpen && (
               <div
                 style={{
                   position: "absolute",
-                  top: "calc(100% + 12px)",
+                  top: "100%",
                   right: 0,
                   backgroundColor: "#1c222b",
                   boxShadow: "0 10px 25px rgba(0,0,0,0.5)",
@@ -140,7 +142,7 @@ export default function Header() {
                 ].map((evt) => (
                   <Link
                     key={evt}
-                    href="/services"
+                    href="/events"
                     onClick={() => setEventsOpen(false)}
                     style={{
                       padding: "10px 18px",
@@ -225,6 +227,9 @@ export default function Header() {
           </Link>
           <Link href="/about" onClick={closeMobile} style={{ color: "#fff", textDecoration: "none", fontSize: "14px" }}>
             About Us
+          </Link>
+          <Link href="/events" onClick={closeMobile} style={{ color: "#fff", textDecoration: "none", fontSize: "14px" }}>
+            Events
           </Link>
           <Link href="/pr-drive" onClick={closeMobile} style={{ color: "#fff", textDecoration: "none", fontSize: "14px" }}>
             PR Drive
