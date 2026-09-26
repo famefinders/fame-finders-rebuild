@@ -41,28 +41,28 @@ const testimonials = [
     role: "CEO, Yushu Excellence Technologies",
     feedback:
       "Fame Finders has done an exceptional job of building users' awareness of our Yushu brand. Team Fame Finders is also on the pulse of the goings-on in the market which helps inform our media strategy.",
-    img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&q=80",
+    img: "/images/amitdua.jpg",
   },
   {
     name: "Anil Joshi",
     role: "Founder, EMBEBO.COM",
     feedback:
       "Working with Fame Finders has been a remarkable experience. I cannot stress enough how much we value and appreciate Fame Finders and its team efforts in our newest health care company.",
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80",
+    img: "/images/aniljoshi.jpg",
   },
   {
     name: "Dr. Parin Somani",
     role: "Entrepreneur & Motivational Speaker",
     feedback:
       "Fame Finders commitment to excellence, creativity, and out-of-the-box perspective has set a new benchmark in providing results-oriented campaigns for any brand. I regard Fame Finders as the best of the best.",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=160&q=80",
+    img: "/images/drparin.jpg",
   },
   {
     name: "Dame Munni Irone",
     role: "Founder Art 4 Peace Awards, California, USA",
     feedback:
       "My brand has benefited through numerous media opportunities, bylined news, speaking engagements, and panel discussions. I have seen an increase in new business. Thank you, Fame Finders",
-    img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=160&q=80",
+    img: "/images/damemunni.jpg",
   },
 ];
 
