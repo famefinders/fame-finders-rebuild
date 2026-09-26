@@ -1,10 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 
 export default function Header() {
   const [location] = useLocation();
   const [eventsOpen, setEventsOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Scroll detection for navbar animation
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 40) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const closeMobile = () => {
     setMobileOpen(false);
@@ -16,7 +30,7 @@ export default function Header() {
   const linkStyle = (path: string) => ({
     color: isActive(path) ? "#c8102e" : "#f3f4f6",
     textDecoration: "none",
-    fontSize: "14px", // Font size bada kiya
+    fontSize: "14px",
     fontWeight: "700",
     letterSpacing: "1.5px",
     textTransform: "uppercase" as const,
@@ -33,28 +47,36 @@ export default function Header() {
         left: 0,
         right: 0,
         zIndex: 1000,
-        backgroundColor: "rgba(18, 22, 28, 0.95)",
-        borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
-        backdropFilter: "blur(8px)",
+        backgroundColor: scrolled ? "rgba(18, 22, 28, 0.98)" : "rgba(18, 22, 28, 0.85)",
+        borderBottom: scrolled ? "1px solid rgba(255, 255, 255, 0.15)" : "1px solid rgba(255, 255, 255, 0.08)",
+        backdropFilter: "blur(12px)",
+        boxShadow: scrolled ? "0 10px 30px rgba(0, 0, 0, 0.5)" : "none",
+        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
       }}
     >
       <div
         style={{
           maxWidth: "1300px",
           margin: "0 auto",
-          padding: "26px 32px", // Header ki height/padding badi kar di
+          padding: scrolled ? "16px 32px" : "26px 32px", // Scroll karne par navbar compact/smooth ho jayega
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          transition: "padding 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
-        {/* Logo Section - Bada kiya */}
+        {/* Logo Section */}
         <div style={{ display: "flex", alignItems: "center" }}>
           <Link href="/">
             <img
               src="/images/logo.jpg"
               alt="Fame Finders"
-              style={{ height: "48px", objectFit: "contain", cursor: "pointer" }}
+              style={{
+                height: scrolled ? "38px" : "48px", // Scroll karne par logo size smoothly chota hoga
+                objectFit: "contain",
+                cursor: "pointer",
+                transition: "height 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+              }}
             />
           </Link>
         </div>
@@ -64,7 +86,7 @@ export default function Header() {
           style={{
             display: "none",
             alignItems: "center",
-            gap: "36px", // Links ke beech ka gap badhaya
+            gap: "36px",
           }}
           className="desktop-nav-menu"
         >
