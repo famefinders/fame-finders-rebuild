@@ -11,6 +11,16 @@ export default function Footer() {
     setFormData({ name: "", email: "", message: "" });
   };
 
+  // Yahan apni 6 images ke exact filenames daal dena (jaise "mydaiz.jpg", "studydaiz.jpg", etc.)
+  const groupImages = [
+    "mydiaz.jpg",
+    "studydaz.jpg",
+    "influencias.jpg",
+    "famefinders.jpg",
+    "kbdnews.jpg",
+    "redff.jpg",
+  ];
+
   return (
     <footer style={{ backgroundColor: "#d9383a", color: "#ffffff", fontFamily: "inherit" }}>
       {/* 1. We Love To Hear From You Section */}
@@ -134,7 +144,7 @@ export default function Footer() {
         />
       </div>
 
-      {/* 3. Our Groups Strip */}
+      {/* 3. Our Groups Strip with Heading and 6 Images */}
       <div style={{ backgroundColor: "#c83032", padding: "40px 20px", textAlign: "center" }}>
         <h3 style={{ fontSize: "16px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "30px", color: "#ffffff" }}>
           Our Groups
@@ -147,16 +157,26 @@ export default function Footer() {
             alignItems: "center",
             justifyContent: "center",
             flexWrap: "wrap",
-            gap: "40px",
-            opacity: 0.95,
+            gap: "35px",
           }}
         >
-          <span style={{ fontSize: "18px", fontWeight: 800, fontStyle: "italic", letterSpacing: "1px" }}>My Daiz</span>
-          <span style={{ fontSize: "18px", fontWeight: 800, letterSpacing: "1px" }}>STUDY DAIZ</span>
-          <span style={{ fontSize: "18px", fontWeight: 800, letterSpacing: "1px", fontFamily: "serif" }}>INFLUENCAIS</span>
-          <span style={{ fontSize: "18px", fontWeight: 900, letterSpacing: "0.5px" }}>FAMEfinders</span>
-          <span style={{ fontSize: "18px", fontWeight: 800, letterSpacing: "1px" }}><strong style={{ color: "#000" }}>KBD</strong>NEWS</span>
-          <span style={{ fontSize: "16px", fontWeight: 700 }}>FAMEfinders <span style={{ fontSize: "11px", display: "block", fontWeight: 400 }}>Magazine</span></span>
+          {groupImages.map((imgName, idx) => (
+            <div key={idx} style={{ height: "40px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <img
+                src={`/images/${imgName}`}
+                alt={`Group ${idx + 1}`}
+                style={{
+                  maxHeight: "38px",
+                  maxWidth: "160px",
+                  objectFit: "contain",
+                  display: "block",
+                }}
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+              />
+            </div>
+          ))}
         </div>
       </div>
 
