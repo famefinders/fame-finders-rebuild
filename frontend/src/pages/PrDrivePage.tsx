@@ -1,72 +1,95 @@
 const prItems = [
   {
     title: "Fame Finders Unveils 'India's Top Coaches to Follow in 2025' – Celebrating the Nation's Most Influential Mentors and Experts.",
+    image: "/images/prdrive1.jpg",
   },
   {
     title: "Fame Finders Launches Celebrating Eminent Personalities Campaign, Spotlighting Visionaries, Innovators, and Inspirational Leaders",
+    image: "/images/prdrive2.jpg",
   },
   {
     title: 'Fame Finders Reveals "10 Successful Chartered Accountant Entrepreneurs In India"',
+    image: "/images/prdrive3.jpg",
   },
   {
     title: "Fame Finders honored 25 Inspiring coaches who are transforming the lives of people",
+    image: "/images/prdrive4.jpg",
   },
   {
     title: "Health and Education Experts of 2024: Pioneering Innovations Shape Tomorrow's Wellness and Learning Landscape",
+    image: "/images/prdrive5.jpg",
   },
   {
     title: "Fame Finders presents the Leading 5 Successful Entrepreneurs In India",
+    image: "/images/prdrive6.jpg",
   },
   {
     title: "Fame Finders Introduces the top 10 best authors who made the impact on society",
+    image: "/images/prdrive7.jpg",
   },
   {
     title: "The 5 Most Outstanding Indian Photographers to watch In 2023 are presented by Fame Finders Media",
+    image: "/images/prdrive8.jpg",
   },
   {
     title: "Fame Finders announced the names of India's Top 10 Coaches Of the Year 2022",
+    image: "/images/prdrive9.jpg",
   },
   {
     title: "Top 10 rising startups In 2021-22 announced by Fame Finders",
+    image: "/images/prdrive10.jpg",
   },
   {
     title: "Top 10 Emerging Women Entrepreneurs of the year 2021-22 by Fame Finders",
+    image: "/images/prdrive11.jpg",
   },
   {
     title: "Fame Finders declares India's Top 20 Fastest Growing Startups of 2022",
+    image: "/images/prdrive12.jpg",
   },
   {
     title: "The names of Top 10 Inspiring Personalities of the year 2022 declared by Fame Finders",
+    image: "/images/prdrive13.jpg",
   },
   {
     title: "Fame Finders Introduces India's top 20 healthcare experts In 2022",
+    image: "/images/prdrive14.jpg",
   },
   {
     title: "Top 10 Rising NGOs In 2021-22 announced by Fame Finders",
+    image: "/images/prdrive15.jpg",
   },
   {
     title: "Top 10 Prominent Educational Institutions of the year 2022-23 declared by Fame Finders",
+    image: "/images/prdrive16.jpg",
   },
   {
     title: "Top 20 Industry Experts of the year 2021-22 unveiled In virtual award ceremony conducted by Fame Finders",
+    image: "/images/prdrive17.jpg",
   },
   {
     title: "The Top 20 Successful Entrepreneurs of the year 2021-22 revealed by Fame Finders",
+    image: "/images/prdrive18.jpg",
   },
   {
     title: "India's Top 10 Most Inspiring Young Entrepreneurs of the year 2022 honored by Fame Finders",
+    image: "/images/prdrive19.jpg",
   },
   {
     title: "Top 10 Prominent and Dynamic Personalities to watch In 2023",
+    image: "/images/prdrive20.jpg",
   },
   {
     title: "Top 10 Chartered Accountants of 2023 to get financial advice",
+    image: "/images/prdrive21.jpg",
   },
   {
     title: "Top 10 Rising MSMEs (Micro, Small and Medium Enterprises) In 2021-22 announced by Fame Finders",
+    image: "/images/prdrive22.jpg",
   },
   {
     title: "Fame Finders Media Introduces 10 Prominent Global Personalities Shaping The Future With Their Remarkable Achievements",
+    image: "/images/prdrive23.jpg",
   },
 ];
 
@@ -167,7 +190,7 @@ export default function PrDrivePage() {
         </div>
       </section>
 
-      {/* 4. PR Drive Campaigns Grid with Image Placeholders */}
+      {/* 4. PR Drive Campaigns Grid with Real Images */}
       <section style={{ maxWidth: "1140px", margin: "0 auto", padding: "40px 20px 100px" }}>
         <div
           style={{
@@ -189,25 +212,39 @@ export default function PrDrivePage() {
                 flexDirection: "column",
               }}
             >
-              {/* IMAGE PLACEHOLDER SECTION */}
+              {/* IMAGE DISPLAY SECTION */}
               <div
                 style={{
                   width: "100%",
                   height: "180px",
-                  backgroundColor: "#f3f4f6",
+                  backgroundColor: "#f9fafb",
                   borderBottom: "1px solid #e5e7eb",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "#9ca3af",
-                  fontSize: "13px",
-                  fontWeight: 600,
-                  letterSpacing: "0.5px",
-                  textAlign: "center",
-                  padding: "10px",
+                  overflow: "hidden",
                 }}
               >
-                [ INSERT IMAGE HERE ]
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                    display: "block",
+                  }}
+                  onError={(e) => {
+                    e.currentTarget.style.display = "none";
+                    const parent = e.currentTarget.parentElement;
+                    if (parent) {
+                      parent.style.color = "#9ca3af";
+                      parent.style.fontSize = "12px";
+                      parent.style.textAlign = "center";
+                      parent.innerHTML = `[ Image Missing: prdrive${idx + 1}.jpg ]`;
+                    }
+                  }}
+                />
               </div>
 
               {/* Card Title */}
