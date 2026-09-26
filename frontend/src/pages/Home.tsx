@@ -62,45 +62,27 @@ export default function Home() {
       {/* 1. Hero Section */}
       <section className="hero" id="top" data-testid="section-hero">
         <div className="hero-content">
+          {/* Center Logo Box replaced with logo.jpg */}
           <div
             style={{
-              display: "inline-flex",
-              alignItems: "center",
-              justifyContent: "center",
-              border: "3px solid #c8a45c",
+              display: "inline-block",
+              backgroundColor: "rgba(0, 0, 0, 0.75)",
+              border: "2px solid #c8a45c",
               padding: "16px 36px",
-              backgroundColor: "rgba(0, 0, 0, 0.45)",
+              borderRadius: "4px",
               marginBottom: "24px",
-              gap: "14px",
             }}
           >
-            <div
+            <img
+              src="/images/logo.jpg"
+              alt="Fame Finders Logo"
               style={{
-                backgroundColor: "#111111",
-                color: "#ffffff",
-                width: "60px",
-                height: "60px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "42px",
-                fontWeight: 900,
-                fontFamily: "sans-serif",
+                maxHeight: "60px",
+                width: "auto",
+                display: "block",
+                objectFit: "contain",
               }}
-            >
-              F
-            </div>
-            <span
-              style={{
-                fontSize: "clamp(36px, 6vw, 64px)",
-                fontWeight: 900,
-                color: "#ffffff",
-                letterSpacing: "1px",
-                fontFamily: "sans-serif",
-              }}
-            >
-              AME<span style={{ fontWeight: 400, fontStyle: "italic" }}>finders</span>
-            </span>
+            />
           </div>
 
           <hr className="hero-rule" />
