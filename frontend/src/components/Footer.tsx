@@ -11,7 +11,6 @@ export default function Footer() {
     setFormData({ name: "", email: "", message: "" });
   };
 
-  // Yahan apni 6 images ke exact filenames daal dena (jaise "mydaiz.jpg", "studydaiz.jpg", etc.)
   const groupImages = [
     "mydiaz.jpg",
     "studydaz.jpg",
@@ -22,7 +21,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{ backgroundColor: "#d9383a", color: "#ffffff", fontFamily: "inherit" }}>
+    <footer style={{ backgroundColor: "#bd2225", color: "#ffffff", fontFamily: "inherit" }}>
       {/* 1. We Love To Hear From You Section */}
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "80px 20px 60px", textAlign: "center" }}>
         <h2 style={{ fontSize: "28px", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", margin: "0 0 10px" }}>
@@ -117,7 +116,7 @@ export default function Footer() {
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.backgroundColor = "#ffffff";
-                  e.currentTarget.style.color = "#d9383a";
+                  e.currentTarget.style.color = "#bd2225";
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.backgroundColor = "transparent";
@@ -145,7 +144,7 @@ export default function Footer() {
       </div>
 
       {/* 3. Our Groups Strip with Heading and 6 Images */}
-      <div style={{ backgroundColor: "#c83032", padding: "40px 20px", textAlign: "center" }}>
+      <div style={{ backgroundColor: "#a81b1e", padding: "40px 20px", textAlign: "center" }}>
         <h3 style={{ fontSize: "16px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "30px", color: "#ffffff" }}>
           Our Groups
         </h3>
@@ -183,7 +182,7 @@ export default function Footer() {
       {/* 4. Bottom Contact Bar */}
       <div
         style={{
-          backgroundColor: "#b82b2d",
+          backgroundColor: "#961316",
           padding: "20px 20px",
           display: "flex",
           justifyContent: "space-between",
