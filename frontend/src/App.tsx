@@ -38,9 +38,24 @@ export default function App() {
             padding: "16px 24px",
             display: "flex",
             alignItems: "center",
-            justifyContent: "flex-end",
+            justifyContent: "space-between",
           }}
         >
+          {/* Logo Section */}
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <Link href="/">
+              <img
+                src="/images/famefinders-logo.jpg"
+                alt="Fame Finders"
+                style={{ height: "36px", objectFit: "contain", cursor: "pointer" }}
+                onError={(e) => {
+                  // Fallback agar image load na ho toh text dikhaye
+                  e.currentTarget.style.display = "none";
+                }}
+              />
+            </Link>
+          </div>
+
           {/* Desktop Navigation */}
           <nav
             style={{
