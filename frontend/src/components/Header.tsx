@@ -5,20 +5,28 @@ export default function Header() {
   const [location] = useLocation();
   const [eventsOpen, setEventsOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-  // Scroll listener for Glassmorphism effect
+  // Smart Hide & Show on Scroll logic
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        // Niche scroll karne par navbar hide ho jayega
+        setShowNavbar(false);
+        setEventsOpen(false);
       } else {
-        setScrolled(false);
+        // Upar scroll karne par navbar slide down hoke dikhega
+        setShowNavbar(true);
       }
+      setLastScrollY(currentScrollY);
     };
-    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const closeMobile = () => {
     setMobileOpen(false);
@@ -47,13 +55,13 @@ export default function Header() {
         left: 0,
         right: 0,
         zIndex: 1000,
-        // Glassmorphism styling with smooth scroll transitions
-        backgroundColor: scrolled ? "rgba(18, 22, 28, 0.7)" : "rgba(18, 22, 28, 0.95)",
-        backdropFilter: "blur(16px)",
-        WebkitBackdropFilter: "blur(16px)",
-        borderBottom: scrolled ? "1px solid rgba(200, 164, 92, 0.3)" : "1px solid rgba(255, 255, 255, 0.1)",
-        boxShadow: scrolled ? "0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.05)" : "none",
-        transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
+        backgroundColor: "rgba(18, 22, 28, 0.95)",
+        backdropFilter: "blur(12px)",
+        borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
+        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.4)",
+        // Smart Slide-down / slide-up transition effect
+        transform: showNavbar ? "translateY(0)" : "translateY(-100%)",
+        transition: "transform 0.35s cubic-bezier(0.4, 0, 0.2, 1)",
       }}
     >
       <div
@@ -72,13 +80,7 @@ export default function Header() {
             <img
               src="/images/logo.jpg"
               alt="Fame Finders"
-              style={{
-                height: "46px",
-                objectFit: "contain",
-                cursor: "pointer",
-                filter: scrolled ? "drop-shadow(0 2px 8px rgba(200,164,92,0.3))" : "none",
-                transition: "filter 0.3s ease",
-              }}
+              style={{ height: "46px", objectFit: "contain", cursor: "pointer" }}
             />
           </Link>
         </div>
@@ -133,15 +135,14 @@ export default function Header() {
                   position: "absolute",
                   top: "100%",
                   right: 0,
-                  backgroundColor: "rgba(28, 34, 43, 0.95)",
-                  backdropFilter: "blur(12px)",
+                  backgroundColor: "#1c222b",
                   boxShadow: "0 15px 35px rgba(0,0,0,0.6)",
                   borderRadius: "6px",
                   minWidth: "280px",
                   padding: "10px 0",
                   display: "flex",
                   flexDirection: "column",
-                  border: "1px solid rgba(200, 164, 92, 0.2)",
+                  border: "1px solid rgba(255,255,255,0.1)",
                 }}
               >
                 {[
@@ -201,8 +202,7 @@ export default function Header() {
       {mobileOpen && (
         <div
           style={{
-            backgroundColor: "rgba(22, 27, 34, 0.98)",
-            backdropFilter: "blur(12px)",
+            backgroundColor: "#161b22",
             padding: "20px 24px",
             display: "flex",
             flexDirection: "column",
@@ -216,7 +216,7 @@ export default function Header() {
           <Link href="/services" onClick={closeMobile} style={{ color: location === "/services" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/services" ? "700" : "400" }}>
             Services
           </Link>
-          <Link href="/about" onClick={closeMobile} style={{ color: location === "/about" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/" ? "700" : "400" }}>
+          <Link href="/about" onClick={closeMobile} style={{ color: location === "/about" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/about" ? "700" : "400" }}>
             About Us
           </Link>
           <Link href="/events" onClick={closeMobile} style={{ color: location === "/events" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/events" ? "700" : "400" }}>
