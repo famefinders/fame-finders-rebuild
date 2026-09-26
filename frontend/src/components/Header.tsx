@@ -7,6 +7,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // Floating Island Pill scroll detection
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 30) {
@@ -29,7 +30,7 @@ export default function Header() {
   const linkStyle = (path: string) => ({
     color: isActive(path) ? "#c8102e" : "#f3f4f6",
     textDecoration: "none",
-    fontSize: "14px",
+    fontSize: "13px",
     fontWeight: "700",
     letterSpacing: "1.5px",
     textTransform: "uppercase" as const,
@@ -46,20 +47,29 @@ export default function Header() {
         left: 0,
         right: 0,
         zIndex: 1000,
-        backgroundColor: scrolled ? "#12161c" : "rgba(18, 22, 28, 0.4)",
-        borderBottom: scrolled ? "1px solid rgba(255, 255, 255, 0.15)" : "1px solid rgba(255, 255, 255, 0.05)",
-        boxShadow: scrolled ? "0 10px 30px rgba(0, 0, 0, 0.6)" : "none",
-        transition: "background-color 0.4s ease, border-bottom 0.4s ease, box-shadow 0.4s ease",
+        display: "flex",
+        justifyContent: "center",
+        padding: scrolled ? "16px 20px" : "0px",
+        transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
       }}
     >
       <div
         style={{
-          maxWidth: "1300px",
-          margin: "0 auto",
-          padding: "24px 32px",
+          width: "100%",
+          maxWidth: scrolled ? "1050px" : "1300px",
+          backgroundColor: scrolled ? "rgba(18, 22, 28, 0.85)" : "rgba(18, 22, 28, 0.95)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
+          // Scroll karne par navbar rounded island (pill) ban jayega
+          borderRadius: scrolled ? "50px" : "0px",
+          border: scrolled ? "1px solid rgba(200, 164, 92, 0.3)" : "1px solid rgba(255, 255, 255, 0.1)",
+          borderTop: scrolled ? "1px solid rgba(200, 164, 92, 0.3)" : "none",
+          boxShadow: scrolled ? "0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(200, 164, 92, 0.1)" : "none",
+          padding: scrolled ? "14px 32px" : "24px 32px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
         }}
       >
         {/* Logo Section */}
@@ -68,7 +78,7 @@ export default function Header() {
             <img
               src="/images/logo.jpg"
               alt="Fame Finders"
-              style={{ height: "46px", objectFit: "contain", cursor: "pointer" }}
+              style={{ height: scrolled ? "36px" : "44px", objectFit: "contain", cursor: "pointer", transition: "height 0.3s ease" }}
             />
           </Link>
         </div>
@@ -78,7 +88,7 @@ export default function Header() {
           style={{
             display: "none",
             alignItems: "center",
-            gap: "36px",
+            gap: "32px",
           }}
           className="desktop-nav-menu"
         >
@@ -103,7 +113,7 @@ export default function Header() {
               style={{
                 color: location === "/events" ? "#c8102e" : "#f3f4f6",
                 textDecoration: "none",
-                fontSize: "14px",
+                fontSize: "13px",
                 fontWeight: "700",
                 letterSpacing: "1.5px",
                 textTransform: "uppercase",
@@ -123,14 +133,15 @@ export default function Header() {
                   position: "absolute",
                   top: "100%",
                   right: 0,
-                  backgroundColor: "#12161c",
-                  boxShadow: "0 15px 35px rgba(0,0,0,0.7)",
-                  borderRadius: "6px",
+                  backgroundColor: "rgba(28, 34, 43, 0.95)",
+                  backdropFilter: "blur(12px)",
+                  boxShadow: "0 15px 35px rgba(0,0,0,0.6)",
+                  borderRadius: "12px",
                   minWidth: "280px",
                   padding: "10px 0",
                   display: "flex",
                   flexDirection: "column",
-                  border: "1px solid rgba(255, 255, 255, 0.15)",
+                  border: "1px solid rgba(200, 164, 92, 0.2)",
                 }}
               >
                 {[
@@ -147,7 +158,7 @@ export default function Header() {
                       padding: "12px 20px",
                       color: "#d1d5db",
                       textDecoration: "none",
-                      fontSize: "14px",
+                      fontSize: "13px",
                       lineHeight: "1.4",
                     }}
                   >
@@ -174,9 +185,9 @@ export default function Header() {
             background: "none",
             border: "1px solid rgba(255,255,255,0.3)",
             color: "#fff",
-            padding: "8px 16px",
-            borderRadius: "4px",
-            fontSize: "14px",
+            padding: "6px 14px",
+            borderRadius: "20px",
+            fontSize: "13px",
             letterSpacing: "1px",
             cursor: "pointer",
           }}
@@ -190,30 +201,37 @@ export default function Header() {
       {mobileOpen && (
         <div
           style={{
-            backgroundColor: "#12161c",
+            position: "absolute",
+            top: "100%",
+            left: "20px",
+            right: "20px",
+            backgroundColor: "rgba(22, 27, 34, 0.98)",
+            backdropFilter: "blur(16px)",
+            borderRadius: "16px",
             padding: "20px 24px",
             display: "flex",
             flexDirection: "column",
             gap: "16px",
-            borderTop: "1px solid rgba(255,255,255,0.1)",
+            border: "1px solid rgba(255,255,255,0.1)",
+            boxShadow: "0 20px 40px rgba(0,0,0,0.6)",
           }}
         >
-          <Link href="/" onClick={closeMobile} style={{ color: location === "/" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/" ? "700" : "400" }}>
+          <Link href="/" onClick={closeMobile} style={{ color: location === "/" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "15px", fontWeight: location === "/" ? "700" : "400" }}>
             Home
           </Link>
-          <Link href="/services" onClick={closeMobile} style={{ color: location === "/services" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/services" ? "700" : "400" }}>
+          <Link href="/services" onClick={closeMobile} style={{ color: location === "/services" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "15px", fontWeight: location === "/services" ? "700" : "400" }}>
             Services
           </Link>
-          <Link href="/about" onClick={closeMobile} style={{ color: location === "/about" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/about" ? "700" : "400" }}>
+          <Link href="/about" onClick={closeMobile} style={{ color: location === "/about" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "15px", fontWeight: location === "/about" ? "700" : "400" }}>
             About Us
           </Link>
-          <Link href="/events" onClick={closeMobile} style={{ color: location === "/events" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/events" ? "700" : "400" }}>
+          <Link href="/events" onClick={closeMobile} style={{ color: location === "/events" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "15px", fontWeight: location === "/events" ? "700" : "400" }}>
             Events
           </Link>
-          <Link href="/pr-drive" onClick={closeMobile} style={{ color: location === "/pr-drive" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/pr-drive" ? "700" : "400" }}>
+          <Link href="/pr-drive" onClick={closeMobile} style={{ color: location === "/pr-drive" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "15px", fontWeight: location === "/pr-drive" ? "700" : "400" }}>
             PR Drive
           </Link>
-          <Link href="/contact" onClick={closeMobile} style={{ color: location === "/contact" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "16px", fontWeight: location === "/contact" ? "700" : "400" }}>
+          <Link href="/contact" onClick={closeMobile} style={{ color: location === "/contact" ? "#c8102e" : "#fff", textDecoration: "none", fontSize: "15px", fontWeight: location === "/contact" ? "700" : "400" }}>
             Contact Us
           </Link>
         </div>
