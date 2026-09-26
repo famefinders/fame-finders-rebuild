@@ -143,9 +143,9 @@ export default function Footer() {
         />
       </div>
 
-      {/* 3. Our Groups Strip with Heading and 6 Images */}
-      <div style={{ backgroundColor: "#a81b1e", padding: "40px 20px", textAlign: "center" }}>
-        <h3 style={{ fontSize: "16px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "30px", color: "#ffffff" }}>
+      {/* 3. Our Groups White Strip with 6 Images */}
+      <div style={{ backgroundColor: "#ffffff", padding: "45px 20px", textAlign: "center" }}>
+        <h3 style={{ fontSize: "16px", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "35px", color: "#bd2225" }}>
           Our Groups
         </h3>
         <div
@@ -156,16 +156,16 @@ export default function Footer() {
             alignItems: "center",
             justifyContent: "center",
             flexWrap: "wrap",
-            gap: "35px",
+            gap: "45px",
           }}
         >
           {groupImages.map((imgName, idx) => (
-            <div key={idx} style={{ height: "40px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div key={idx} style={{ height: "45px", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <img
                 src={`/images/${imgName}`}
                 alt={`Group ${idx + 1}`}
                 style={{
-                  maxHeight: "38px",
+                  maxHeight: "42px",
                   maxWidth: "160px",
                   objectFit: "contain",
                   display: "block",
