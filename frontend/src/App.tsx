@@ -7,10 +7,14 @@ import ContactPage from "./pages/ContactPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import EventsPage from "./pages/EventsPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <div className="site">
+      {/* Scroll to top on route change */}
+      <ScrollToTop />
+
       {/* Global Header Component */}
       <Header />
 
