@@ -69,17 +69,21 @@ export default function EventsPage() {
         </p>
       </div>
 
-      {/* Events Image Cards Grid (Pure Posters) */}
+      {/* Events Image Cards Grid (Fixed proportions for all posters) */}
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px 80px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "30px" }}>
         {eventsList.map((evt, idx) => (
           <div
             key={idx}
             style={{
-              backgroundColor: "#1c222b",
+              backgroundColor: "#161b22",
               borderRadius: "8px",
               overflow: "hidden",
               border: "1px solid rgba(255,255,255,0.08)",
               boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
+              height: "380px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
             <img
@@ -87,15 +91,15 @@ export default function EventsPage() {
               alt={evt.title}
               style={{
                 width: "100%",
-                height: "auto",
+                height: "100%",
+                objectFit: "contain",
                 display: "block",
-                objectFit: "cover",
+                backgroundColor: "#161b22",
               }}
               onError={(e) => {
                 e.currentTarget.style.display = "none";
                 const parent = e.currentTarget.parentElement;
                 if (parent) {
-                  parent.style.height = "350px";
                   parent.style.display = "flex";
                   parent.style.alignItems = "center";
                   parent.style.justifyContent = "center";
