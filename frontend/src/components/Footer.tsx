@@ -1,92 +1,196 @@
-import { Link } from "wouter";
+import { useState, FormEvent } from "react";
 
 export default function Footer() {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 5000);
+    setFormData({ name: "", email: "", message: "" });
+  };
+
   return (
-    <footer
-      style={{
-        backgroundColor: "#12161c",
-        color: "#9ca3af",
-        borderTop: "1px solid rgba(255, 255, 255, 0.1)",
-        padding: "50px 20px 30px",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          display: "flex",
-          flexDirection: "column",
-          gap: "40px",
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "30px",
-            alignItems: "flex-start",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-            <Link href="/">
-              <img
-                src="/images/logo.jpg"
-                alt="Fame Finders"
-                style={{ height: "40px", objectFit: "contain", cursor: "pointer" }}
-              />
-            </Link>
-            <p style={{ fontSize: "13px", lineHeight: "1.6", margin: 0 }}>
-              Fame Finders Media is a leading PR agency known for transforming brands by evolving and protecting their image.
-            </p>
-          </div>
-
-          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-            <h4 style={{ fontSize: "15px", fontWeight: "700", color: "#ffffff", letterSpacing: "1px", marginBottom: "6px" }}>
-              QUICK LINKS
-            </h4>
-            <Link href="/" style={{ color: "#9ca3af", textDecoration: "none", fontSize: "13px" }}>Home</Link>
-            <Link href="/services" style={{ color: "#9ca3af", textDecoration: "none", fontSize: "13px" }}>Services</Link>
-            <Link href="/about" style={{ color: "#9ca3af", textDecoration: "none", fontSize: "13px" }}>About Us</Link>
-            <Link href="/events" style={{ color: "#9ca3af", textDecoration: "none", fontSize: "13px" }}>Events</Link>
-            <Link href="/pr-drive" style={{ color: "#9ca3af", textDecoration: "none", fontSize: "13px" }}>PR Drive</Link>
-            <Link href="/contact" style={{ color: "#9ca3af", textDecoration: "none", fontSize: "13px" }}>Contact Us</Link>
-          </div>
-
-          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-            <h4 style={{ fontSize: "15px", fontWeight: "700", color: "#ffffff", letterSpacing: "1px", marginBottom: "6px" }}>
-              CONTACT US
-            </h4>
-            <p style={{ fontSize: "13px", margin: 0, lineHeight: "1.5" }}>
-              📍 Karol Bagh, New Delhi - 110005
-            </p>
-            <p style={{ fontSize: "13px", margin: 0 }}>
-              📞 +91 97187 50379
-            </p>
-            <p style={{ fontSize: "13px", margin: 0 }}>
-              ✉️ info@famefinders.in
-            </p>
-          </div>
+    <footer style={{ backgroundColor: "#d9383a", color: "#ffffff", fontFamily: "inherit" }}>
+      {/* 1. We Love To Hear From You Section */}
+      <div style={{ maxWidth: "900px", margin: "0 auto", padding: "80px 20px 60px", textAlign: "center" }}>
+        <h2 style={{ fontSize: "28px", fontWeight: 800, letterSpacing: "2px", textTransform: "uppercase", margin: "0 0 10px" }}>
+          WE LOVE TO HEAR FROM YOU
+        </h2>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "10px", color: "rgba(255,255,255,0.7)", marginBottom: "40px" }}>
+          <span>············</span>
+          <span>▼</span>
+          <span>············</span>
         </div>
 
-        <hr style={{ border: "none", borderTop: "1px solid rgba(255, 255, 255, 0.08)", margin: 0 }} />
+        {submitted ? (
+          <div style={{ backgroundColor: "rgba(0,0,0,0.2)", padding: "20px", borderRadius: "6px", fontSize: "16px", fontWeight: "600" }}>
+            Thank you! Your message has been sent successfully.
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "35px", textAlign: "left" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "35px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "none",
+                    borderBottom: "1px solid rgba(255,255,255,0.7)",
+                    padding: "10px 0",
+                    color: "#ffffff",
+                    fontSize: "15px",
+                    outline: "none",
+                  }}
+                />
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "none",
+                    borderBottom: "1px solid rgba(255,255,255,0.7)",
+                    padding: "10px 0",
+                    color: "#ffffff",
+                    fontSize: "15px",
+                    outline: "none",
+                  }}
+                />
+              </div>
+            </div>
 
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <textarea
+                placeholder="Message"
+                required
+                rows={3}
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                style={{
+                  backgroundColor: "transparent",
+                  border: "none",
+                  borderBottom: "1px solid rgba(255,255,255,0.7)",
+                  padding: "10px 0",
+                  color: "#ffffff",
+                  fontSize: "15px",
+                  outline: "none",
+                  resize: "vertical",
+                }}
+              />
+            </div>
+
+            <div style={{ textAlign: "center", marginTop: "10px" }}>
+              <button
+                type="submit"
+                style={{
+                  backgroundColor: "transparent",
+                  border: "2px solid #ffffff",
+                  color: "#ffffff",
+                  padding: "12px 36px",
+                  fontSize: "14px",
+                  fontWeight: "700",
+                  letterSpacing: "1.5px",
+                  textTransform: "uppercase",
+                  cursor: "pointer",
+                  borderRadius: "2px",
+                  transition: "all 0.3s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "#ffffff";
+                  e.currentTarget.style.color = "#d9383a";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.color = "#ffffff";
+                }}
+              >
+                Send message
+              </button>
+            </div>
+          </form>
+        )}
+      </div>
+
+      {/* 2. Google Map Embed Section */}
+      <div style={{ width: "100%", height: "400px", borderTop: "2px solid rgba(255,255,255,0.2)", borderBottom: "2px solid rgba(255,255,255,0.2)" }}>
+        <iframe
+          title="Karol Bagh Location Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9961440742116!2d77.186634!3d28.647278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d029a2c3a5b9f%3A0x8e8331e2474f85e2!2sKarol%20Bagh%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0, filter: "contrast(1.1) saturate(1.1)" }}
+          allowFullScreen={false}
+          loading="lazy"
+        />
+      </div>
+
+      {/* 3. Our Groups Strip */}
+      <div style={{ backgroundColor: "#c83032", padding: "40px 20px", textAlign: "center" }}>
+        <h3 style={{ fontSize: "16px", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "30px", color: "#ffffff" }}>
+          Our Groups
+        </h3>
         <div
           style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
             display: "flex",
-            justifyContent: "space-between",
             alignItems: "center",
+            justifyContent: "center",
             flexWrap: "wrap",
-            gap: "15px",
-            fontSize: "12px",
+            gap: "40px",
+            opacity: 0.95,
           }}
         >
-          <p style={{ margin: 0 }}>
-            © {new Date().getFullYear()} Fame Finders Media. All Rights Reserved.
-          </p>
-          <div style={{ display: "flex", gap: "15px" }}>
-            <Link href="/contact" style={{ color: "#9ca3af", textDecoration: "none" }}>Privacy Policy</Link>
-            <Link href="/contact" style={{ color: "#9ca3af", textDecoration: "none" }}>Terms</Link>
-          </div>
+          <span style={{ fontSize: "18px", fontWeight: 800, fontStyle: "italic", letterSpacing: "1px" }}>My Daiz</span>
+          <span style={{ fontSize: "18px", fontWeight: 800, letterSpacing: "1px" }}>STUDY DAIZ</span>
+          <span style={{ fontSize: "18px", fontWeight: 800, letterSpacing: "1px", fontFamily: "serif" }}>INFLUENCAIS</span>
+          <span style={{ fontSize: "18px", fontWeight: 900, letterSpacing: "0.5px" }}>FAMEfinders</span>
+          <span style={{ fontSize: "18px", fontWeight: 800, letterSpacing: "1px" }}><strong style={{ color: "#000" }}>KBD</strong>NEWS</span>
+          <span style={{ fontSize: "16px", fontWeight: 700 }}>FAMEfinders <span style={{ fontSize: "11px", display: "block", fontWeight: 400 }}>Magazine</span></span>
+        </div>
+      </div>
+
+      {/* 4. Bottom Contact Bar */}
+      <div
+        style={{
+          backgroundColor: "#b82b2d",
+          padding: "20px 20px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "15px",
+          fontSize: "13px",
+          borderTop: "1px solid rgba(255,255,255,0.15)",
+          maxWidth: "1400px",
+          margin: "0 auto",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <span>📍</span>
+          <span>8A/8, WEA Karol Bagh New Delhi - 110005</span>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <span>📞</span>
+          <span>+91-9718750379</span>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <span>📞</span>
+          <span>+91-8376073133</span>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <span>✉️</span>
+          <span>info@famefinders.in</span>
         </div>
       </div>
     </footer>
